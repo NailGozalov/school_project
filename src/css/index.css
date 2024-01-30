@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./aa06d45e-588b-4643-b3c7-812dcb825fde_850.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food_name{
+  margin: 5px;
+}
+.radios, .submit {
+    margin: 20px 10px;
+}
+
+.food_name{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 10px;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+
+.head_h {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lunchForm_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.lunchForm {
+  background-color: #0dcaca63;
+  width: 60%;
+  display: block;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 50px 0 50px;
+  min-height: 80vh; /* Установка минимальной высоты */
+}
+
+
+/* .food {
+    /* display: flex; */
+    /* justify-content: space-between;} */
+
+
+.star-fill {
+    color: orange;
+    
+}
+
+:root {
+    --primary-colour: #ffffff00;
+    --secondary-colour: hsl(233 80% 70%);
+    --star-colour: hsl(38 90% 55%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--primary-colour);
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 20%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.container .container__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 .5em;
+    width: 100%;
+    height: 100%;
+}
+.container__items{
+  margin-top: 20px;
+}
+.container .container__items input {
+    display: none;
+}
+
+.container .container__items label {
+    width: 20%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+.container .container__items label {
+  width: 3em; /* Увеличиваем размер label */
+  height: 3em; /* Увеличиваем размер label */
+}
+.food_name {
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 30px; /* Увеличиваем расстояние между названиями блюд и звездами */
+}
+.container .container__items label .star-stroke {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-colour);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.container .container__items label .star-stroke .star-fill {
+    width: 70%;
+    aspect-ratio: 1;
+    background: var(--primary-colour);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.container .container__items input:hover ~ label .star-stroke, .container .container__items input:checked ~ label .star-stroke {
+    background: var(--star-colour);
+}
+
+.container .container__items input:checked ~ label .star-stroke .star-fill {
+    background: var(--star-colour);
+}
+
+.container .container__items label:hover .label-description::after {
+    content: attr(data-content);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+    margin-inline: auto;
+    width: 100%;
+    height: 2em;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    transform: rotateY(180deg);
+}
+
+.language-switcher{
+    position: absolute;
+    right: 10px;
+}
+.button-62 {
+  background: linear-gradient(to bottom right, #4743b6, #4b6cc5);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 10px 0 0 10px;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 63, 230, 0.5), .125rem .125rem 1rem rgba(19, 90, 166, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(58, 63, 230, 0.5), .125rem .125rem 1rem rgba(19, 90, 166, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .food_name, .radios, .submit {
+      margin: 10px 5px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .lunchForm {
+      width: 80%;
+      padding: 0 20px;
+    }
+    .food_name, .radios, .submit {
+      margin: 5px 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lunchForm {
+      width: 90%;
+      padding: 0 10px;
+    }
+    .food_name, .radios, .submit {
+      margin: 3px 1px;
+    }
+  }
+  

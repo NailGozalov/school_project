@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>index</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content"></div>
+        <div class="language-switcher">
+            <button class="button-62" onclick="changeLanguage('en')">English</button>
+            <button class="button-62" onclick="changeLanguage('ru')">Русский</button>
+            <button class="button-62" onclick="changeLanguage('az')">Azərbaycanca</button>
+        </div>
+        <div class="lunchForm_div">
+            <form class="lunchForm" id="lunchForm">
+                <div class="head_h"><h1>Оцените обед</h1></div>
+                <div class="food">
+                    <div class="food_name">
+                        <label for="soupGreat" class="soup">Суп:</label>
+                    </div>
+                    <div class="container">
+                        <div class="container__items">
+                            <input type="radio" name="soupStars" id="soupSt5" value="excellent">
+                            <label for="soupSt5">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="soupStars" id="soupSt4" value="good">
+                            <label for="soupSt4">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="soupStars" id="soupSt3" value="ok">
+                            <label for="soupSt3">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="soupStars" id="soupSt2" value="bad">
+                            <label for="soupSt2">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="soupStars" id="soupSt1" value="terrible">
+                            <label for="soupSt1">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food_name">
+                        <label for="mainCourseGreat" class="main_course">Основное блюдо:</label>
+                    </div>
+                    <div class="container">
+                        <div class="container__items">
+                            <input type="radio" name="mainCourseStars" id="mainCourseSt5" value="excellent">
+                            <label for="mainCourseSt5">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="mainCourseStars" id="mainCourseSt4" value="good">
+                            <label for="mainCourseSt4">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="mainCourseStars" id="mainCourseSt3" value="ok">
+                            <label for="mainCourseSt3">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="mainCourseStars" id="mainCourseSt2" value="bad">
+                            <label for="mainCourseSt2">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="mainCourseStars" id="mainCourseSt1" value="terrible">
+                            <label for="mainCourseSt1">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food_name">
+                        <label for="garnishGreat" class="garnish">Гарнир:</label>
+                    </div>
+                    <div class="container">
+                        <div class="container__items">
+                            <input type="radio" name="garnishStars" id="garnishSt5" value="excellent">
+                            <label for="garnishSt5">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="garnishStars" id="garnishSt4" value="good">
+                            <label for="garnishSt4">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="garnishStars" id="garnishSt3" value="ok">
+                            <label for="garnishSt3">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="garnishStars" id="garnishSt2" value="bad">
+                            <label for="garnishSt2">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="garnishStars" id="garnishSt1" value="terrible">
+                            <label for="garnishSt1">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food_name">
+                        <label for="saladGreat" class="salad">Салат:</label>
+                    </div>
+                    <div class="container">
+                        <div class="container__items">
+                            <input type="radio" name="saladStars" id="saladSt5" value="excellent">
+                            <label for="saladSt5">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="saladStars" id="saladSt4" value="good">
+                            <label for="saladSt4">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="saladStars" id="saladSt3" value="ok">
+                            <label for="saladSt3">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="saladStars" id="saladSt2" value="bad">
+                            <label for="saladSt2">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="saladStars" id="saladSt1" value="terrible">
+                            <label for="saladSt1">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food_name">
+                        <label for="compoteGreat" class="compote">Компот:</label>
+                    </div>
+                    <div class="container">
+                        <div class="container__items">
+                            <input type="radio" name="compoteStars" id="compoteSt5" value="excellent">
+                            <label for="compoteSt5">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="compoteStars" id="compoteSt4" value="good">
+                            <label for="compoteSt4">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="compoteStars" id="compoteSt3" value="ok">
+                            <label for="compoteSt3">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="compoteStars" id="compoteSt2" value="bad">
+                            <label for="compoteSt2">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                            <input type="radio" name="compoteStars" id="compoteSt1" value="terrible">
+                            <label for="compoteSt1">
+                                <div class="star-stroke">
+                                    <div class="star-fill"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input class="button-36 submit" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

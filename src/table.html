@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <link rel="stylesheet" href="../src/css/table.css">
+</head>
+<body>
+    <h1>Results</h1>
+    <div class="filter-container">
+        <label class="date-filter-label" for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+        <label class="date-filter-label" for="endDate">End Date:</label>
+        <input type="date" id="endDate">
+        <button id="applyFilter">Apply Filter</button>
+        <button id="showAllResults">Show All Results</button>
+        <button id="downloadExcel">Download Excel</button>
+        
+        
+    </div>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>
+                    Soup
+                    <select id="soupFilter">
+                        <option value="all">All</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                        <option value="terrible">Terrible</option>
+                    </select>
+                </th>
+                <th>
+                    Salad
+                    <select id="saladFilter">
+                        <option value="all">All</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                        <option value="terrible">Terrible</option>
+                    </select>
+                </th>
+                <th>
+                    Main course
+                    <select id="mainCourseFilter">
+                        <option value="all">All</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                        <option value="terrible">Terrible</option>
+                    </select>
+                </th>
+                <th>
+                    Compote
+                    <select id="compoteFilter">
+                        <option value="all">All</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                        <option value="terrible">Terrible</option>
+                    </select>
+                </th>
+                <th>
+                    Garnish
+                    <select id="garnishFilter">
+                        <option value="all">All</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                        <option value="terrible">Terrible</option>
+                    </select>
+                </th>
+                <th>Date and time</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody">
+
+        </tbody>
+    </table>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="./js/excel.js"></script>
+
+</body>
+</html>

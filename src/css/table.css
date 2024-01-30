@@ -1,0 +1,235 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.date-filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-filter-label, #startDate, #endDate {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+#startDate, #endDate {
+    width: 150px;
+    outline: none;
+}
+
+#startDate:hover, #endDate:hover {
+    border-color: #4CAF50; 
+}
+
+#applyFilter {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#applyFilter:hover {
+    background-color: #005f6b;
+}
+
+
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#resultsTable th, #resultsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#resultsTable th {
+    background-color: #f2f2f2;
+}
+
+
+#resultsTable thead {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+.date-filter-container {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+th select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+th select:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+th select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#showAllResults {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#showAllResults:hover {
+    background-color: #45a049;
+}
+
+#downloadExcel {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#downloadExcel:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+}
+
+/* .filter-container input,
+.filter-container select,
+.filter-container button {
+    margin-bottom: 10px;
+} */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+.date-filter-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Цвет текста */
+    margin-right: 10px;
+    padding: 8px; /* Подходящий внутренний отступ */
+    border-radius: 5px; /* Закруглим углы */
+    background-color: #f2f2f2; /* Светлый цвет фона */
+    transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.date-filter-label:hover {
+    background-color: #e0e0e0; /* Немного темнее цвет фона при наведении */
+    color: #000; /* Цвет текста при наведении */
+}
+
+
+
+
+
+/* Для маленьких устройств (телефонов) */
+ @media only screen and (max-width: 600px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filter-container label,
+    .filter-container input,
+    .filter-container select,
+    .filter-container button {
+        margin: 5px;
+        width: 100%;
+    }
+}
+
+/* Для устройств среднего размера (планшетов) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .filter-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .filter-container > * {
+        margin: 5px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    .filter-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
